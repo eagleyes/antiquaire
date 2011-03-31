@@ -30,5 +30,6 @@ gem 'i18n'
  group :development, :test do
    gem 'rspec'
    gem 'rspec-rails'
+   gem 'annotate-models'
    gem 'webrat'
  end
