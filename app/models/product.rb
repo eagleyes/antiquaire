@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-      translate :title, :text 
+      #translate :title, :text 
       attr_accessor :description , :category , :country , :material, :style  
       #attr_accessor :purchase_date , :qty_in_stock , :qty_in_stock_adj, :height, :width , :length , photo
       #
