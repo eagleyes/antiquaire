@@ -1,0 +1,52 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th><%=t :name %></th>
+    <th><%=t :description %></th>
+    <th>Description en</th>
+    <th>Category</th>
+    <th>Purchase date</th>
+    <th>Manufacture year</th>
+    <th>Purchase price</th>
+    <th>Qty in stock</th>
+    <th>Qty in stock adj</th>
+    <th>Country</th>
+    <th>Height</th>
+    <th>Width</th>
+    <th>Length</th>
+    <th>Material</th>
+    <th>Style</th>
+    <th>Photo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= product.description %></td>
+    <td><%= product.category_id %></td>
+    <td><%= product.purchase_date %></td>
+    <td><%= product.manufacture_year %></td>
+    <td><%= product.purchase_price %></td>
+    <td><%= product.qty_in_stock %></td>
+    <td><%= product.qty_in_stock_adj %></td>
+    <td><%= product.country_id %></td>
+    <td><%= product.height %></td>
+    <td><%= product.width %></td>
+    <td><%= product.length %></td>
+    <td><%= product.material_id %></td>
+    <td><%= product.style_id %></td>
+    <td><%= product.photo %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>

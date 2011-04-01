@@ -1,0 +1,85 @@
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_en %><br />
+    <%= f.text_field :name_en %>
+  </div>
+  <div class="field">
+    <%= f.label :name_fr %><br />
+    <%= f.text_field :name_fr %>
+  </div>
+  <div class="field">
+    <%= f.label :description_fr %><br />
+    <%= f.text_area :description_fr %>
+  </div>
+  <div class="field">
+    <%= f.label :description_en %><br />
+    <%= f.text_area :description_en %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br />
+    <%= f.text_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_date %><br />
+    <%= f.date_select :purchase_date %>
+  </div>
+  <div class="field">
+    <%= f.label :manufacture_year %><br />
+    <%= f.text_field :manufacture_year %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_price %><br />
+    <%= f.text_field :purchase_price %>
+  </div>
+  <div class="field">
+    <%= f.label :qty_in_stock %><br />
+    <%= f.text_field :qty_in_stock %>
+  </div>
+  <div class="field">
+    <%= f.label :qty_in_stock_adj %><br />
+    <%= f.text_field :qty_in_stock_adj %>
+  </div>
+  <div class="field">
+    <%= f.label :country_id %><br />
+    <%= f.text_field :country_id %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :material_id %><br />
+    <%= f.text_field :material_id %>
+  </div>
+  <div class="field">
+    <%= f.label :style_id %><br />
+    <%= f.text_field :style_id %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br />
+    <%= f.text_field :photo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

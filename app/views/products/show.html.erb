@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name en:</b>
+  <%= @product.name_en %>
+</p>
+
+<p>
+  <b>Name fr:</b>
+  <%= @product.name_fr %>
+</p>
+
+<p>
+  <b>Description fr:</b>
+  <%= @product.description_fr %>
+</p>
+
+<p>
+  <b>Description en:</b>
+  <%= @product.description_en %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @product.category_id %>
+</p>
+
+<p>
+  <b>Purchase date:</b>
+  <%= @product.purchase_date %>
+</p>
+
+<p>
+  <b>Manufacture year:</b>
+  <%= @product.manufacture_year %>
+</p>
+
+<p>
+  <b>Purchase price:</b>
+  <%= @product.purchase_price %>
+</p>
+
+<p>
+  <b>Qty in stock:</b>
+  <%= @product.qty_in_stock %>
+</p>
+
+<p>
+  <b>Qty in stock adj:</b>
+  <%= @product.qty_in_stock_adj %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @product.country_id %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @product.height %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @product.width %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @product.length %>
+</p>
+
+<p>
+  <b>Material:</b>
+  <%= @product.material_id %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%= @product.style_id %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= @product.photo %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
