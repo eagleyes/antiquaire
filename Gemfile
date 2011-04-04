@@ -7,7 +7,7 @@ gem 'rails', '3.0.5'
 
 gem 'sqlite3'
 gem 'i18n'
-gem 'globalize3', :git => 'git://github.com/galetahub/globalize3.git'
+gem 'globalize3', :git => 'git://github.com/svenfuchs/globalize3.git' 
 # Use unicorn as the web server
 # gem 'unicorn'
 

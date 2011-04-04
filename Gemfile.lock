@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/galetahub/globalize3.git
-  revision: 291ae54e01878ce118f2a4ff23ee325c0b8a843d
+  remote: git://github.com/svenfuchs/globalize3.git
+  revision: cb3f638f1504d0836765c47500c7d459dba4bab9
   specs:
-    globalize3 (0.1.0)
+    globalize3 (0.1.0.beta)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
 
@@ -87,7 +87,7 @@ GEM
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
-    tzinfo (0.3.25)
+    tzinfo (0.3.26)
     webrat (0.7.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
