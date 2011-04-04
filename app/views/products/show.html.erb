@@ -1,23 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name en:</b>
-  <%= @product.name_en %>
+<b><%=t :name %></b>
+  <%= @product.name %>
 </p>
 
 <p>
-  <b>Name fr:</b>
-  <%= @product.name_fr %>
-</p>
-
-<p>
-  <b>Description fr:</b>
-  <%= @product.description_fr %>
-</p>
-
-<p>
-  <b>Description en:</b>
-  <%= @product.description_en %>
+  <b><%t :description %></b>
+  <%= @product.description %>
 </p>
 
 <p>
