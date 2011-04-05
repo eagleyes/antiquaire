@@ -4,20 +4,19 @@
   <tr>
     <th><%=t :name %></th>
     <th><%=t :description %></th>
-    <th>Description en</th>
-    <th>Category</th>
-    <th>Purchase date</th>
-    <th>Manufacture year</th>
-    <th>Purchase price</th>
-    <th>Qty in stock</th>
-    <th>Qty in stock adj</th>
-    <th>Country</th>
-    <th>Height</th>
-    <th>Width</th>
-    <th>Length</th>
-    <th>Material</th>
-    <th>Style</th>
-    <th>Photo</th>
+    <th><%=t :category %></th>
+    <th><%=t :purchaseDate %></th>
+    <th><%=t :manufactureYear %></th>
+    <th><%=t :purchasePrice %></th>
+    <th><%=t :qtyInStock %></th>
+    <th><%=t :qtyInStockAdj %></th>
+    <th><%=t :country %></th>
+    <th><%=t :height %></th>
+    <th><%=t :width %></th>
+    <th><%=t :length %></th>
+    <th><%=t :material %></th>
+    <th><%=t :style %></th>
+    <th><%=t :photo %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -28,7 +27,7 @@
     <td><%= product.name %></td>
     <td><%= product.description %></td>
     <td><%= product.category_id %></td>
-    <td><%= product.purchase_date %></td>
+    <td><%= l product.purchase_date %></td>
     <td><%= product.manufacture_year %></td>
     <td><%= product.purchase_price %></td>
     <td><%= product.qty_in_stock %></td>

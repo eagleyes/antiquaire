@@ -8,7 +8,7 @@
 # French Canadian adjustments
 # by Serafim Junior Dos Santos Fagundes <serafim@cyb3r.ca>
 
-fr-CA:
+fr:
   date:
     formats:
       default: "%Y-%m-%d"
@@ -191,5 +191,19 @@ fr-CA:
     attributes:
       fr_name: "Nom Francais"
   
-  name: "nom"
-  description: "description"
+  name: "Nom"
+  description: "Description"
+  category: "Catégorie"
+  purchaseDate: "Date d'achat"
+  manufactureYear: "Année de fabrication"
+  purchasePrice: "Prix d'achat"
+  qtyInStock: "Quantité en inventaire"
+  qtyInStockAdj: "Ajustement de l'inventaire"
+  country: "Pays"
+  height: "Hauteur"
+  width: "Largeur"
+  length: "Longueur"
+  material: "Matériel"
+  style: "Style"
+  photo: "Photo"
+  
