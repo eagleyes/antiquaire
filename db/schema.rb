@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110401173806) do
+ActiveRecord::Schema.define(:version => 20110406160024) do
+
+  create_table "materials", :force => true do |t|
+    t.string   "name_fr"
+    t.string   "name_en"
+    t.boolean  "valid",      :default => true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "product_translations", :force => true do |t|
     t.integer  "product_id"

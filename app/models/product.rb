@@ -4,6 +4,7 @@ class Product < ActiveRecord::Base
       #attr_accessor :purchase_date , :qty_in_stock , :qty_in_stock_adj, :height, :width , :length , photo
       #
 
+      has_one :material
       #validates :name,	:presence => true ,
       #			:length => { :maximum => 100 }
 	
