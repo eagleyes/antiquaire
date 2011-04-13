@@ -6,6 +6,11 @@ GIT
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
 
+PATH
+  remote: ../globalize3_accessors
+  specs:
+    globalize3_accessors (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -99,6 +104,7 @@ PLATFORMS
 DEPENDENCIES
   annotate-models
   globalize3!
+  globalize3_accessors!
   i18n
   rails (= 3.0.5)
   rspec
